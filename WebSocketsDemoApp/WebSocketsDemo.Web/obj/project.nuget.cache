@@ -1,8 +1,28 @@
 {
   "version": 2,
-  "dgSpecHash": "zE0kTyihBs0V8ZiAi78G46p4ZPlTQCs8A8Mw1vCmKjM+ch4wBDA8pcGVWpo2m0HM4v2lqLf+FcG0axIYxhhPKQ==",
+  "dgSpecHash": "AZyaZJ5I6cLQ7me9jHYZ6oYuaAfarbQYvmQByzVZtIKL68KnMG/AUPFmz7gZGDjgfLrebIH5GISFbQPcF7ZPOQ==",
   "success": true,
   "projectFilePath": "D:\\PluralSight\\Practise\\Websockets-Demo\\WebSocketsDemoApp\\WebSocketsDemo.Web\\WebSocketsDemo.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.aspnetcore.nodeservices\\3.1.14\\microsoft.aspnetcore.nodeservices.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.aspnetcore.spaservices\\3.1.14\\microsoft.aspnetcore.spaservices.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\3.1.14\\microsoft.aspnetcore.spaservices.extensions.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.14\\microsoft.extensions.configuration.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.14\\microsoft.extensions.configuration.abstractions.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.14\\microsoft.extensions.configuration.binder.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.14\\microsoft.extensions.dependencyinjection.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.14\\microsoft.extensions.dependencyinjection.abstractions.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.14\\microsoft.extensions.fileproviders.abstractions.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.14\\microsoft.extensions.fileproviders.physical.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.14\\microsoft.extensions.filesystemglobbing.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.logging\\3.1.14\\microsoft.extensions.logging.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.14\\microsoft.extensions.logging.abstractions.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.logging.configuration\\3.1.14\\microsoft.extensions.logging.configuration.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.logging.console\\3.1.14\\microsoft.extensions.logging.console.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.options\\3.1.14\\microsoft.extensions.options.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.14\\microsoft.extensions.options.configurationextensions.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.14\\microsoft.extensions.primitives.3.1.14.nupkg.sha512",
+    "C:\\Users\\Gopi\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
