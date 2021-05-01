@@ -26,6 +26,8 @@ namespace WebSocketsDemo.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSpaStaticFiles(config => config.RootPath = "wwwroot");
+            services.AddSingleton(typeof(SquareService), new SquareService());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +37,9 @@ namespace WebSocketsDemo.Web
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseStaticFiles();
+            app.UseSpaStaticFiles();
 
             app.UseHttpsRedirection();
 
@@ -46,6 +51,41 @@ namespace WebSocketsDemo.Web
             {
                 endpoints.MapControllers();
             });
+
+            app.UseWebSockets();
+            app.Use(async (context, next) =>
+            {
+                if (context.Request.Path == "/ws")
+                {
+                    if (context.WebSockets.IsWebSocketRequest)
+                    {
+                        var socket = await context.WebSockets.AcceptWebSocketAsync();
+                        var squareService = (SquareService)app.ApplicationServices.GetService(typeof(SquareService));
+                        await squareService.AddUser(socket);
+                        while (socket.State == WebSocketState.Open)
+                        {
+                            await Task.Delay(TimeSpan.FromMinutes(1));
+                        }
+                    }
+                    else
+                    {
+                        context.Response.StatusCode = 400;
+                    }
+                }
+                else
+                {
+                    await next();
+                }
+            });
+            app.UseSpa(config =>
+            {
+                config.Options.SourcePath = "client-app";
+                if (env.IsDevelopment())
+                {
+                    config.UseAngularCliServer("start");
+                }
+            });
+
         }
     }
 }
