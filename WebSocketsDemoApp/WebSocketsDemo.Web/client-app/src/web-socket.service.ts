@@ -16,7 +16,7 @@ export class WebSocketService {
   constructor() {}
 
   startSocket() {
-    this.socket = new WebSocket("wss://localhost:5001/ws");
+    this.socket = new WebSocket("wss://localhost:44334/ws");
     this.socket.addEventListener("open", (ev) => {
       console.log("opened");
     });
